@@ -2,53 +2,63 @@
 <html lang="he" dir="rtl">
 <head>
 <meta charset="utf-8">
-<title>לוח יומי</title>
+<title>Daily Calendar</title>
 <style>
 body {
     font-family: Arial, sans-serif;
+    margin: 10px;
     background: white;
     color: black;
-    margin: 20px;
 }
+
 .container {
     display: flex;
+    align-items: flex-start;
 }
+
 .right {
     width: 60%;
-    padding-left: 20px;
+    padding-left: 16px;
 }
+
 .left {
     width: 40%;
     border-right: 2px solid black;
-    padding-right: 20px;
+    padding-right: 16px;
 }
+
 h1 {
-    margin-bottom: 20px;
-    font-size: 48px;
+    margin: 0 0 12px 0;
+    font-size: clamp(36px, 5vw, 56px);
     font-weight: bold;
 }
+
 .event {
-    margin-bottom: 8px;
-    font-weight: bold;        /* make bold */
-    font-size: 40px;          /* increase font size */
-}
-.time {
+    margin-bottom: 10px;
+    font-size: clamp(26px, 4vw, 42px);
     font-weight: bold;
-    margin-left: 6px;
 }
+
+.time {
+    margin-left: 8px;
+}
+
 ul {
     padding-right: 20px;
+    margin-top: 0;
 }
+
 ul li {
-    font-weight: bold;        /* make bold */
-    font-size: 40px;          /* increase font size */
-    margin-bottom: 6px;
+    margin-bottom: 8px;
+    font-size: clamp(26px, 4vw, 42px);
+    font-weight: bold;
 }
+
 .gpt {
-    margin-top: 20px;
+    margin-top: 16px;
     font-style: italic;
-    font-weight: bold;        /* make bold */
-    font-size: 40px;          /* increase font size */
+    font-size: clamp(24px, 3.5vw, 38px);
+    font-weight: bold;
 }
 </style>
 </head>
@@ -60,35 +70,40 @@ ul li {
 <h1>רביעי 21/01</h1>
 
 <div class="event">
-<span class="time">07:15–13:15</span>
+<span class="time">13:15–07:15</span>
 <span>שדג</span>
 </div>
 
 <div class="event">
-<span class="time">08:15–09:15</span>
+<span class="time">09:15–08:15</span>
 <span>בדיקה מאוד ארוכה 3 אולי יורדת שורה 2</span>
 </div>
 
 <div class="event">
-<span class="time">09:45–10:45</span>
+<span class="time">10:45–09:45</span>
 <span>ארוך זה לפעמים ההפך מקצר אבל לא תמיד</span>
 </div>
 
 <div class="event">
-<span class="time">11:00–12:00</span>
+<span class="time">12:00–11:00</span>
 <span>בדיקה 2</span>
 </div>
 
 <div class="event">
-<span class="time">13:30–14:30</span>
+<span class="time">14:30–13:30</span>
 <span>Test 2</span>
 </div>
 
 </div>
 
 <div class="left">
-<h1>חמישי 22/01</h1>
-<ul><li>בדיקה</li><li>Test</li></ul>
+<h1>דברים נוספים</h1>
+<ul><li>אחד Two שלוש</li><li>בדיקה לאורי יש משהו חשוב</li><li>גם לתמר יש משהו</li></ul>
+<div class="gpt">
+<p>• למה הספרים תמיד עצובים? כי יש להם יותר מדי בעיות.</p>
+<p>• ב-21 בינואר 2026, ייערך לראשונה חידון עולמי בנושא טכנולוגיה מתקדמת.</p>
+</div>
+
 </div>
 </div>
 </body>
